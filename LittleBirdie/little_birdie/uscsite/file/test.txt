@@ -1,0 +1,7 @@
+The following two descriptive illustrations assume a reading and writing convention of left to right, where the left-most digit or character therefore corresponds to data being sent or received first, or being in the lowest address in memory, and the right-most digit or character corresponds to the data being sent or received last, or being in the highest address in memory.
+
+Big-endianness may be demonstrated by writing a decimal number, say one hundred twenty-three, on paper in the usual positional notation understood by a numerate reader: 123. The digits are written starting from the left and to the right, with the most significant digit, 1, written first. This is analogous to the lowest address of memory being used first. This is an example of a big-endian convention taken from daily life.
+
+The little-endian way of writing the same number, one hundred twenty-three, would place the hundreds-digit 1 in the right-most position: 321. A person following conventional big-endian place-value order, who is not aware of this special ordering, would read a different number: three hundred and twenty one. Endianness in computing is similar, but it usually applies to the ordering of bytes, rather than of digits.
+
+The illustrations to the right, where a is a memory address, show big-endian and little-endian storage in memory.

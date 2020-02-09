@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block main_content %}
+{%load color_code%}
+  <center>
+    <h1 style = "font-family:georgia,garamond,serif;">File Uploaded! Look at the Results Below:</h1>
+    {%for word in word_list%}
+      <span style = "background-color: {{word.color}}">{{word.prelemma}}</span>
+    {%endfor%}
+  </center>
+<!--
+  <hr>
+  <h2>Topics:</h2>
+  <ul>
+    {%for i in num_topics%}
+      <li style = "background-color: {{topic_colors|return_item:i}}">Topic {{i}} is {{topic_words|return_item:i}}</li>
+    {%endfor%}
+  </ul>
+  <hr>-->
+{% endblock %}

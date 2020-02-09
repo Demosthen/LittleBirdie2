@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block main_content %}
+
+<center>
+<h1 style = "font-family:georgia,garamond,serif;">Upload a File</h1>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <center>{{ form.as_p }}</center>
+  <button type="submit">Submit New Post</button>
+</form>
+</center>
+
+
+
+{% endblock %}
